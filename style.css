@@ -52,11 +52,20 @@ body {
 
 .game-cell {
     background:  #14BDAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     height: 200px;
     width: 200px;
 }
 
-.game-cell::before {
-    content: 'x'
+.x::before {
+    content: '×';
+    font-size: 200px;
+}
+
+.o::before {
+    content: '○';
+    font-size: 225px;
 }
